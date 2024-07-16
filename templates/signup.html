@@ -1,0 +1,69 @@
+<html>
+    <h1>SignUp page</h1>
+    <body>
+        <form action="/login/" method="post">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label for="salutation">Salutation:</label>
+                <select>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Dr.">Dr.</option> 
+                </select>      
+            </div><br>
+
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="your first name"><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="your last name"><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="designation">Designation:</label>
+                <select>
+                    <option value="Associate Professor">Associate Professor</option>
+                    <option value="Assistance Professor">Assistance Professor</option>
+                    <option value="Research Scholar">Research Scholar</option> 
+                </select>      
+            </div><br>
+            
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"><br><br>
+            </div>
+ 
+            <div class="form-group">
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" name="contact"><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="university/college Name">University/College Name:</label>
+                <input type="text" id="unicollegename" name="university/college Name"><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="university/college Address">University/College Address:</label>
+                <input type="text" id="unicollegeaddress" name="university/college Address"><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="university/college City">University/College City:</label>
+                <input type="text" id="unicollegecity" name="university/college City"><br><br>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>  
+
+
+    </body>
+    
+        
+</html>
+
+        
